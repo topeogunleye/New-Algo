@@ -25,3 +25,24 @@
 // [output] integer
 
 // The largest product of adjacent elements.
+
+function maxAdjacentProduct(nums) {
+    // Check if the array has at least two elements
+    if (nums.length < 2) {
+        return null; // There are no adjacent elements
+    }
+
+    let maxProduct = Number.NEGATIVE_INFINITY;
+
+    for (let i = 0; i < nums.length - 1; i++) {
+        const currentProduct = nums[i] * nums[i + 1];
+        maxProduct = Math.max(maxProduct, currentProduct);
+    }
+
+    return maxProduct;
+}
+
+// Example usage:
+const array = [3, -5, 1, -2, 8, -1];
+const result = maxAdjacentProduct(array);
+console.log("Maximum adjacent product:", result);
