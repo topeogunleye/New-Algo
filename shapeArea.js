@@ -37,6 +37,7 @@ console.log(result); // Output: 13
 
 // shape of a polygon
 function shapeArea(n) {
+    // return the calculated area
     return Math.pow(n, 2) + Math.pow(n - 1, 2);
 }
 
