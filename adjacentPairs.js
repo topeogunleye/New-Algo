@@ -1,7 +1,7 @@
 // Given an array of integers, find the pair of adjacent elements that has the largest product  
 // and return that product.
 
-// Example
+// Example 
 
 // For inputArray = [3, 6, -2, -5, 7, 3], the output should be
 // solution(inputArray) = 21.
@@ -11,8 +11,6 @@
 // Input/Output
 
 // [execution time limit] 4 seconds (js)
-
-// [memory limit] 1 GB
 
 // [input] array.integer inputArray
 
@@ -43,6 +41,8 @@ function maxAdjacentProduct(nums) {
 }
 
 // Example usage:
+// Declare a variable called array
 const array = [3, -5, 1, -2, 8, -1];
 const result = maxAdjacentProduct(array);
+
 console.log("Maximum adjacent product:", result);
