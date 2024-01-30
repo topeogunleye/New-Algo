@@ -30,6 +30,7 @@ function maxAdjacentProduct(nums) {
         return null; // There are no adjacent elements
     }
 
+    // Initialize the maximum product to the smallest possible number
     let maxProduct = Number.NEGATIVE_INFINITY;
 
     for (let i = 0; i < nums.length - 1; i++) {
